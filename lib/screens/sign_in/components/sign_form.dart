@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:shop_app/components/custom_suffix_icon.dart';
 import 'package:shop_app/components/default_button.dart';
+import 'package:shop_app/screens/home/home_screen.dart';
 
 import '../../../size_config.dart';
 
@@ -31,7 +32,7 @@ class _SignFormState extends State<SignForm> {
           SizedBox(height: getProportionateScreenHeight(10)),
           DefaultButton(
             text: 'Continue',
-            press: () {},
+            press: () => Navigator.pushNamed(context, HomeScreen.routeName),
           )
         ],
       ),
